@@ -233,17 +233,17 @@ export function chooseInvoice(data = {}) {
  * @param {Object} data
  */
 export function shareFile(data) {
-  return new Promise((resolve, reject) => {
-    /*nativeShareFile(data);
+  /*return new Promise((resolve, reject) => {
+    nativeShareFile(data);
     emitter.once('SendMessageToWX.Resp', (resp) => {
       if (resp.errCode === 0) {
         resolve(resp);
       } else {
         reject(new WechatError(resp));
       }
-    });*/
-    return nativeShareFile(data);
-  });
+    });
+  });*/
+  return nativeShareFile(data);
 }
 
 /**
